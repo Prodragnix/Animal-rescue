@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo rescue Alert centre</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: rgb(218, 252, 218);
+        }
+        #top{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: white;
+            background-color: darkgreen;
+            font-weight: bold;
+            padding: 10px 10px ;
+        }
+        h1{
+            color: darkgreen;
+            padding: 45px 0px 0px;
+            text-align: center;
+        }
+        h1+p{
+            text-align: center;
+
+        }
+        h2{
+            color: darkgreen;
+        }
+        .location{
+            background-color: lightgreen;
+            padding: 10px;
+            border: solid 3px darkgreen;
+            margin: 10px;
+            width: 250px;
+            border-radius: 10px;
+        }
+        .rescue{
+            background-color: rgb(73, 211, 73);
+            padding: 10px;
+            border: solid 3px darkgreen;
+            position: relative;
+            left: 35px;
+            width: 250px;
+            border-radius: 10px;
+        }
+        .location:hover{
+            background-color: green;
+            color: white;
+        }
+        @keyframes celebrate{
+                0% {top:0px}
+                50% {transform: rotate(30deg);}
+                100% {transform: rotate(-30deg);}
+        }
+        .rescue:hover{
+            animation: celebrate 1s ease-in-out infinite alternate;
+        background-color: gold;}
+        #now{
+            position: absolute;
+            border: solid 3px green;
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            padding: 15px ;
+            width: 250px;
+        }
+        #safe{
+            color: white;
+            background-color: gold;
+            position: relative;
+            left: 250px;
+            bottom: 10px ;
+            width: 45px ;
+            border-radius: 15px;
+            padding: 3px;
+        }
+        #sticky{
+            position:sticky;
+            top: 50px;
+            margin-top: 75px;
+            background-color: darkgreen;
+            color:white ;
+            padding: 10px;
+            border-radius: 15px;
+            width: 250px;
+            text-align: center;
+        }
+        #more{
+            background-color: white;
+            border: solid 3px green;
+            padding: 30px; 
+            width: 250px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section id="top">Zoo Rescue Alert - Emergency team active</section>
+    <h1>Zoo Rescue Tracker</h1>
+    <p>Find your favourite animals and track where they are!</p>
+    <h2>Location of animals</h2>
+    <section class="location">
+        Lion - Resting Zone
+    </section>
+    <section class="location">
+        Penguin - Swimming Zone
+    </section>
+    <section class="location">
+        Elephant - Eating Zone
+    </section>
+    <h2>Hurt animals</h2>
+    <section class="location">
+        Giraffe - Checkup pending
+    </section>
+    <section class="rescue">Rescued Sloth - Safe</section>
+    <section class="location">
+        Zebra - Getting released
+    </section>
+    <h2>Checks happening right now</h2>
+    <section id="now">
+        Panda <br> Medical checking
+    </section>
+    <section id="safe">
+        SAFE
+    </section>
+    <h2 id="sticky">Rescued animals</h2>
+    <section id="more">
+        Tiger - Observation
+    </section>
+    <section id="more">
+        Deer - Released
+    </section>
+    <section id="more">
+        Owl - Night Care
+    </section>
+    <section id="more">
+        Turtle - Shell treatment
+    </section>
+    <section id="more">
+Rabbit - Healthy
+    </section>
+    <section id="more">
+        Flamingo - Wing Check
+    </section>
+    <section id="more">
+        Monkey - Play Area
+    </section>
+    <section id="more">
+        Horse - Recovery stable
+    </section>
+</body>
+</html>
